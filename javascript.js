@@ -69,11 +69,12 @@ function qTest(){
 }
 
 function ZuVieleFragen(){ //Funktion zum Abziehen der Leben bei zu Vielen Fragen
-  if (clicks >= 5){
+  var fragen = Math.floor(Math.random() * 10)+1;
+  if (clicks >= fragen){
     document.getElementById("g-person-aussage").innerHTML= "Das wird mir zu Blöd, Schönen Tag noch!";
     lives--;
     updateLives();
-
+    Resetclicks();
   }
 }
 
@@ -118,23 +119,38 @@ function Resetclicks() {
   clicks = 0; // Setze die Variable auf den gewünschten Standardwert
   var randomValue = Math.random(); //auslosung welcher Satz von der Person gesagt wird
 
-  if (randomValue < 0.2) {
+  if (randomValue < 0.1) {
     document.getElementById("g-person-aussage").innerHTML= "Hallo, Ich würde gerne in den club";
   } 
-  else if(randomValue < 0.4){
+  else if(randomValue < 0.2){
     document.getElementById("g-person-aussage").innerHTML= "Lass mich in den Club ich musste schon so Lange warten";
+  }
+  else if(randomValue < 0.3){
+    document.getElementById("g-person-aussage").innerHTML= "...";
+  }
+  else if(randomValue < 0.4){
+    document.getElementById("g-person-aussage").innerHTML= "...";
+  }  
+  else if(randomValue < 0.5){
+    document.getElementById("g-person-aussage").innerHTML= "...";
   }
   else if(randomValue < 0.6){
     document.getElementById("g-person-aussage").innerHTML= "...";
   }
+  else if(randomValue < 0.7){
+    document.getElementById("g-person-aussage").innerHTML= "...";
+  }
   else if(randomValue < 0.8){
+    document.getElementById("g-person-aussage").innerHTML= "...";
+  }
+  else if(randomValue < 0.9){
     document.getElementById("g-person-aussage").innerHTML= "...";
   }
   else{
     document.getElementById("g-person-aussage").innerHTML= "...";
   }
 
-  var randomValue2 = Math.random();
+  var randomValue2 = Math.random(); //auslosung welche Person als Nächstes Kommt
   
   if (randomValue2 < 0.05) {
     document.getElementById('g-perosnbild').src = './Bilder/Concept_Art_Persons/Obdachloser.png'; // Neuen Bildpfad setzen
