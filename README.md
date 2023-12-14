@@ -5,4 +5,4 @@ Das Spiel Befindet sich zurzeit in der Entwicklung und ist alles andere als Spie
 
 Zum Starten des Spiels die Datei "Haupseite.html" ausführen.
 
-Weitere Infos Folgen
+In dieser Spielvariante, kann man Kemit den Fragen KEINEN Logisch ablauf erkennen und alles ist PEr Zufallsprinzip gesteuert.
